@@ -1,22 +1,14 @@
-import { ChakraProvider } from "@chakra-ui/react";
-import theme from "../theme/index.ts";
+import { theme } from "../design-system";
 
 export const parameters = {
-	actions: { argTypesRegex: "^on[A-Z].*" },
-	controls: {
-		matchers: {
-			color: /(background|color)$/i,
-			date: /Date$/,
-		},
-	},
+  actions: { argTypesRegex: "^on[A-Z].*" },
+  controls: {
+    matchers: {
+      color: /(background|color)$/i,
+      date: /Date$/,
+    },
+  },
+  chakra: {
+    theme: theme,
+  },
 };
-
-const withChakra = (StoryFn) => {
-	return (
-		<ChakraProvider theme={theme}>
-			<StoryFn />
-		</ChakraProvider>
-	);
-};
-
-export const decorators = [withChakra];
