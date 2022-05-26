@@ -1,3 +1,5 @@
+const path = require("path");
+
 module.exports = {
   stories: [
     "../stories/**/*.stories.@(js|jsx|ts|tsx)",
@@ -15,5 +17,18 @@ module.exports = {
   },
   features: {
     storyStoreV7: true,
+  },
+  viteFinal: async (config) => {
+    return {
+      ...config,
+      resolve: {
+        alias: [
+          {
+            find: "@bide",
+            replacement: path.resolve(__dirname, "../design-system"),
+          },
+        ],
+      },
+    };
   },
 };

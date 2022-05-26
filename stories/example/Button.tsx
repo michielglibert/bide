@@ -1,4 +1,4 @@
-import { Button as ChakraButton, ButtonProps } from "@chakra-ui/react";
+import { Button as ChakraButton, ButtonProps } from "@bide";
 import React from "react";
 import "./button.css";
 
@@ -8,4 +8,8 @@ import "./button.css";
 export const Button: React.FC<ButtonProps> = ({
   children,
   ...props
-}: ButtonProps) => <ChakraButton {...props}>{children}</ChakraButton>;
+}: ButtonProps) => (
+  <ChakraButton variant="outline" {...props}>
+    {children}
+  </ChakraButton>
+);

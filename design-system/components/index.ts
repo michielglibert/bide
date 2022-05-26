@@ -1,1 +1,2 @@
-export { default as ButtonTest } from "./ButtonTest/ButtonTest";
+export { default as Tooltip } from "./Tooltip";
+export { default as ButtonTest } from "./ButtonTest";
