@@ -9,12 +9,12 @@ const bodyBase = {
 
 const largeBodyBase = {
   ...bodyBase,
-  fontSize: "18px",
+  fontSize: { base: "16px", laptop: "18px" },
 };
 
 const normalBodyBase = {
   ...bodyBase,
-  fontSize: "16px",
+  fontSize: { base: "14px", laptop: "16px" },
 };
 
 const smallBodyBase = {
@@ -27,39 +27,40 @@ const extraSmallBodyBase = {
 };
 
 const textStyles = {
-  display1: {
-    fontSize: "64px",
-    ...headingsBase,
-  },
-  display2: {
-    fontSize: "56px",
-    ...headingsBase,
-    fontWeight: "normal",
-  },
-  h1Headline: {
+  // ****************************
+  // * Heading
+  // ****************************
+
+  h1: {
     fontSize: { base: "28px", laptop: "32px", laptopL: "36px" },
     ...headingsBase,
   },
-  h2Headline: {
-    fontSize: "32px",
+  h2: {
+    fontSize: { base: "24px", laptop: "28px", laptopL: "32px" },
     ...headingsBase,
   },
-  h3Headline: {
-    fontSize: "28px",
+  h3: {
+    fontSize: { base: "21px", laptop: "24px", laptopL: "28px" },
     ...headingsBase,
   },
-  h4Headline: {
-    fontSize: "24px",
+  h4: {
+    fontSize: { base: "18px", laptop: "21px", laptopL: "24px" },
     ...headingsBase,
   },
-  h5Headline: {
-    fontSize: "21px",
+  h5: {
+    fontSize: { base: "18px", laptopL: "21px" },
     ...headingsBase,
   },
-  h6Headline: {
+  h6: {
     fontSize: "18px",
     ...headingsBase,
   },
+
+  // ****************************
+  // * Normal text
+  // ****************************
+
+  //LG
   largeBody: {
     ...largeBodyBase,
     fontWeight: "normal",
@@ -98,6 +99,8 @@ const textStyles = {
     fontWeight: "bold",
     textDecoration: "underline",
   },
+
+  // MD
   normalBody: {
     ...normalBodyBase,
     fontWeight: "normal",
@@ -136,6 +139,8 @@ const textStyles = {
     fontWeight: "bold",
     textDecoration: "underline",
   },
+
+  // SM
   smallBody: {
     ...smallBodyBase,
     fontWeight: "normal",
@@ -174,6 +179,8 @@ const textStyles = {
     fontWeight: "bold",
     textDecoration: "underline",
   },
+
+  // XS
   extraSmallBody: {
     ...extraSmallBodyBase,
     fontWeight: "normal",
