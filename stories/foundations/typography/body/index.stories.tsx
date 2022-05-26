@@ -2,7 +2,7 @@ import { Divider, SimpleGrid, Text, VStack } from "@bide";
 import { Meta, Story } from "@storybook/react";
 
 export default {
-  title: "Foundation/TextStyles/Body",
+  title: "Foundation/Typography/Body",
 } as Meta;
 
 const textSizes = ["large", "normal", "small", "extraSmall"];

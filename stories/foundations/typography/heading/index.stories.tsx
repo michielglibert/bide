@@ -2,7 +2,7 @@ import { Text, VStack } from "@bide";
 import { Meta, Story } from "@storybook/react";
 
 export default {
-  title: "Foundation/TextStyles/Heading",
+  title: "Foundation/Typography/Heading",
 } as Meta;
 
 export const Heading: Story = () => {
