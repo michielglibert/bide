@@ -1,4 +1,6 @@
 import { extendTheme } from "@chakra-ui/react";
+import components from "./components";
+
 import fonts from "./foundations/fonts";
 import fontSizes from "./foundations/fontSizes";
 import lineHeights from "./foundations/lineHeights";
@@ -9,9 +11,11 @@ import textStyles from "./foundations/textStyles";
 import shadows from "./foundations/shadows";
 import breakpoints from "./foundations/breakpoints";
 import radii from "./foundations/radii";
-import components from "./components";
+import baseColors from "./foundations/baseColors";
+import semanticTokens from "./foundations/semanticTokens";
 
 const theme = extendTheme({
+  colors: baseColors,
   fonts,
   space,
   sizes,
@@ -23,6 +27,7 @@ const theme = extendTheme({
   radii,
   components,
   breakpoints,
+  semanticTokens,
 });
 
 export default theme;

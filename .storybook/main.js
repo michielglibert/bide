@@ -27,6 +27,10 @@ module.exports = {
             find: "@bide",
             replacement: path.resolve(__dirname, "../design-system"),
           },
+          {
+            find: "@typings",
+            replacement: path.resolve(__dirname, "../types"),
+          },
         ],
       },
     };

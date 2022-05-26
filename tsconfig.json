@@ -18,9 +18,10 @@
 
     "baseUrl": ".",
     "paths": {
-      "@bide": ["design-system"]
+      "@bide": ["design-system/*"],
+      "types": ["types/*"]
     }
   },
-  "include": ["src", "stories", "design-system"],
+  "include": ["src", "stories", "design-system", "types"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
