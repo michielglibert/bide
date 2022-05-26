@@ -7,7 +7,7 @@ export default {
 
 const textSizes = ["large", "normal", "small", "extraSmall"];
 
-export const Primary: Story = () => {
+export const Body: Story = () => {
   return (
     <SimpleGrid columns={{ base: 1, laptop: 2 }} gap="4" boxShadow="base">
       {textSizes.map((size) => {

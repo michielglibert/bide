@@ -5,7 +5,7 @@ export default {
   title: "Foundation/TextStyles/Heading",
 } as Meta;
 
-export const Primary: Story = () => {
+export const Heading: Story = () => {
   return (
     <VStack align="stretch">
       <Text as="h1" textStyle="h1">

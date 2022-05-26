@@ -8,7 +8,8 @@
     "preview": "vite preview",
     "start": "start-storybook -p 6006",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "postinstall": "chakra-cli tokens ./design-system/theme/index.ts"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.1.2",
@@ -22,6 +23,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.18.2",
+    "@chakra-ui/cli": "^2.0.0",
     "@chakra-ui/storybook-addon": "^3.0.2",
     "@storybook/addon-actions": "^6.5.5",
     "@storybook/addon-essentials": "^6.5.5",
